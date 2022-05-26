@@ -1,0 +1,794 @@
+fileFormatVersion: 2
+guid: 9eb3a3f508d735843936dc090f92f62e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 843
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc98780774b7c34083ed77ef41093d1
+      internalID: 520358928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 843
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3707edf00b3e54b8e8b350aa572aaa
+      internalID: 1502006207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_2
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 843
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a478b34e6dc78b041b995d5465a91039
+      internalID: -2092284953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_3
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 843
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55118764a4944844485b229323bb78b7
+      internalID: -1387595603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_4
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 843
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dca67861f9957742b214213c9d3c30d
+      internalID: 1929038549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_5
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 843
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124cc46a449204d41bc42ae010f27cba
+      internalID: -118968299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 654
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dbd82405ffcda3409547e8a01498b72
+      internalID: -1247300910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 654
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bb5069c6315fe4c9fbb3d9a67e0135
+      internalID: 983634438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 657
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b16269fdef60641989da0af90fec55
+      internalID: 2144041986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_9
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 657
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dd1db16edcb5245b3dac8be4dbc142
+      internalID: 113331175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_10
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 652
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c799bc8168d43b94b8c388c1999c59e8
+      internalID: -1648871124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_11
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 656
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05747eeae6659f3449245703571841dd
+      internalID: 1822498879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d0ba5cadbc4844fbbd7c45b4b4e38c
+      internalID: 836398745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 464
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2cb33fb9e4c294ab7742d884c4e68b
+      internalID: 1610962239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_14
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 462
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740fbb13321dbd34ba52a34cf34a3920
+      internalID: 46979688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_15
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 462
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7f66a51644cf6499af01e231268cc5
+      internalID: 260806241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_16
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 463
+        width: 159
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464a8d8972d4c93449a4959b35a95c3a
+      internalID: -2069452684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_17
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 464
+        width: 155
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b1bd5cef4b7c748a94171841bd81b8
+      internalID: -580620861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 268
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c4258ae567f9242ab0eef2bddf7898
+      internalID: 2072030418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_19
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 268
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466b3c90853e6cf428e58a63ede20674
+      internalID: 24238104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_20
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 267
+        width: 159
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b5493eb7945c4f8e3f1b6118ac459
+      internalID: 1718753988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_21
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 267
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c986ecd99f1b54785f9758e0a6f8d8
+      internalID: 1355337169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_22
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 269
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db58c4cde921ab46ad9580875750bbc
+      internalID: -1927801302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_23
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 267
+        width: 161
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac29dd117cedce42a9924357d8d63f6
+      internalID: -265001774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682672b4422e8d447abd8c22bf2310ca
+      internalID: -1915914246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_25
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 84
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06e749db7d59bb428a5a366c4c6f5a8
+      internalID: 1702674628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_26
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 84
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99704889906d39c4d9ec840888c4cae7
+      internalID: 1335941445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_27
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 87
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151718e61509b9446b8469a4cd7da39f
+      internalID: -806854850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_28
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 87
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffb8ee7fc0d5a346a0286169d668a95
+      internalID: -173143643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escuela De Videojuegos 1_29
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 87
+        width: 156
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ea1ff527aab0e48886424b6a22542b
+      internalID: -894115392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Escuela De Videojuegos 1_3: -1387595603
+      Escuela De Videojuegos 1_15: 260806241
+      Escuela De Videojuegos 1_16: -2069452684
+      Escuela De Videojuegos 1_20: 1718753988
+      Escuela De Videojuegos 1_0: 520358928
+      Escuela De Videojuegos 1_5: -118968299
+      Escuela De Videojuegos 1_22: -1927801302
+      Escuela De Videojuegos 1_21: 1355337169
+      Escuela De Videojuegos 1_28: -173143643
+      Escuela De Videojuegos 1_11: 1822498879
+      Escuela De Videojuegos 1_6: -1247300910
+      Escuela De Videojuegos 1_1: 1502006207
+      Escuela De Videojuegos 1_2: -2092284953
+      Escuela De Videojuegos 1_4: 1929038549
+      Escuela De Videojuegos 1_7: 983634438
+      Escuela De Videojuegos 1_13: 1610962239
+      Escuela De Videojuegos 1_8: 2144041986
+      Escuela De Videojuegos 1_25: 1702674628
+      Escuela De Videojuegos 1_9: 113331175
+      Escuela De Videojuegos 1_10: -1648871124
+      Escuela De Videojuegos 1_27: -806854850
+      Escuela De Videojuegos 1_12: 836398745
+      Escuela De Videojuegos 1_24: -1915914246
+      Escuela De Videojuegos 1_19: 24238104
+      Escuela De Videojuegos 1_23: -265001774
+      Escuela De Videojuegos 1_26: 1335941445
+      Escuela De Videojuegos 1_29: -894115392
+      Escuela De Videojuegos 1_14: 46979688
+      Escuela De Videojuegos 1_18: 2072030418
+      Escuela De Videojuegos 1_17: -580620861
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
