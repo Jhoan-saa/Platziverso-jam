@@ -177,7 +177,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023600472, y: 4.289999, z: -10}
+  m_LocalPosition: {x: 0.023599995, y: 4.3155003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Follow: {fileID: 526035943}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -339,7 +339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594464002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023600472, y: 4.289999, z: -10}
+  m_LocalPosition: {x: 0.023599995, y: 4.3155003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -357,6 +357,10 @@ PrefabInstance:
     - target: {fileID: 4180093387723859895, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
       propertyPath: m_Name
       value: Escuela De Videojuegos 1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147826134039936402, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
+      propertyPath: m_Range
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6840426534832464059, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
       propertyPath: m_RootOrder
@@ -470,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  forceUp: 1
+  forceUp: 0
   forceUpVelocity: 100
 --- !u!212 &777597908
 SpriteRenderer:
@@ -532,7 +536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777597904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.37450004, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9306, y: 0.8502, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -553,7 +557,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00981611, y: 0.7735792}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -564,7 +568,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.800016, y: 1.9916366}
+  m_Size: {x: 1.8, y: 2.5}
   m_EdgeRadius: 0
 --- !u!1 &896680520
 GameObject:
@@ -644,7 +648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896680520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33204302, y: 8.449223, z: 10}
+  m_LocalPosition: {x: 0, y: 7, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -939,7 +943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148430075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.99924266, y: 6.37999, z: 10}
+  m_LocalPosition: {x: 0, y: 6, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1013,14 +1017,14 @@ MonoBehaviour:
   m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.80999994
+  m_ScreenY: 0.75
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.81
-  m_DeadZoneHeight: 0.07
+  m_DeadZoneWidth: 0.95
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 2
-  m_SoftZoneHeight: 0.4
+  m_SoftZoneWidth: 0.95
+  m_SoftZoneHeight: 0.18
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -1054,6 +1058,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5326127987804326877, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7048252942663769689, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
       propertyPath: m_Name
       value: Escuela De Videojuegos 1_1
@@ -1130,7 +1138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718517859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -1.19, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
