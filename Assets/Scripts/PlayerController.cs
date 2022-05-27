@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public bool forceUp = true;
     public float forceUpVelocity = 100f;
     private Animator animator;
+    public Transform camera;
 
     
     // Start is calld before the first frame update
@@ -29,7 +30,6 @@ public class PlayerController : MonoBehaviour
 
         //get camera screen position
         Vector2 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
-        
         //condicionamos los limites en X en positivo
         if(transform.position.x > maxValueX)
         {

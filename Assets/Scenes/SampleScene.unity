@@ -477,6 +477,7 @@ MonoBehaviour:
   speed: 10
   forceUp: 0
   forceUpVelocity: 100
+  camera: {fileID: 594464004}
 --- !u!212 &777597908
 SpriteRenderer:
   m_ObjectHideFlags: 0
