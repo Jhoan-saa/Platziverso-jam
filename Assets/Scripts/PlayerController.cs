@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     public bool forceUp = true;
     public float forceUpVelocity = 100f;
+    private Animator animator;
 
     
     // Start is calld before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
         if(forceUp == true)
         {
+            animator.SetBool("PowerUpAnim",true);
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,forceUpVelocity));
             Invoke("BoolForceUpFalse", 110f* Time.deltaTime);
         }
@@ -44,6 +47,7 @@ public class PlayerController : MonoBehaviour
     private void BoolForceUpFalse()
     {
         forceUp = false;
+        animator.SetBool("PowerUpAnim",false);
     }
 
 }
