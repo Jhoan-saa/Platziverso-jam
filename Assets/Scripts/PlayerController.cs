@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     public bool forceUp = true;
     public float forceUpVelocity = 100f;
+    private Animator animator;
 
     
     // Start is calld before the first frame update
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         maxValueX = 11f;
         minValueX = 0 - maxValueX;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,13 +44,28 @@ public class PlayerController : MonoBehaviour
 
         if(forceUp)
         {
+            animator.SetBool("PowerUpAnim",true);
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,forceUpVelocity));
-            Invoke("BoolForceUpFalse", 110f* Time.deltaTime);
+            // Invoke("BoolForceUpFalse", 110f* Time.deltaTime);
+            StartCoroutine("BoolForceUp");
+        }
+        //paramos la Coroutine , la animacion y la potencia y del cohete 
+        else 
+        {
+            animator.SetBool("PowerUpAnim",false);
+            StopCoroutine("BoolForceUp");
         }
     }
 
-    private void BoolForceUpFalse()
+    // private void BoolForceUpFalse()
+    // {
+    //     forceUp = false;
+    //     animator.SetBool("PowerUpAnim",false);
+    // }
+
+    private IEnumerator BoolForceUp()
     {
+        yield return new WaitForSeconds(2f);
         forceUp = false;
     }
 

@@ -372,22 +372,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Sprites/Paralax
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Sprites/Paralax
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\rosal\Documents\UnityProjects\Platziverso-jam
+  m_LastProjectPath: C:\Users\vesaa\Documents\Platzi-Jam\platziverso
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a930000
-    m_LastClickedID: 37754
-    m_ExpandedIDs: 000000007493000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 5.4000244}
+    m_SelectedIDs: 6e620000
+    m_LastClickedID: 25198
+    m_ExpandedIDs: 000000005c6000006c60000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -415,7 +415,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000005c600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
