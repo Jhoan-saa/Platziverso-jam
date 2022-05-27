@@ -35,19 +35,32 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector2(minValueX,transform.position.y);
         }
-
+        // Agregamos Fuerza de hacia arriba y velocidad + activamos la animacion PowerUpAnim por 1 segundo con Coroutine
         if(forceUp == true)
         {
             animator.SetBool("PowerUpAnim",true);
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,forceUpVelocity));
-            Invoke("BoolForceUpFalse", 110f* Time.deltaTime);
+            // Invoke("BoolForceUpFalse", 110f* Time.deltaTime);
+            StartCoroutine("BoolForceUp");
+        }
+        //paramos la Coroutine , la animacion y la potencia y del cohete 
+        else 
+        {
+            animator.SetBool("PowerUpAnim",false);
+            StopCoroutine("BoolForceUp");
         }
     }
 
-    private void BoolForceUpFalse()
+    // private void BoolForceUpFalse()
+    // {
+    //     forceUp = false;
+    //     animator.SetBool("PowerUpAnim",false);
+    // }
+
+    private IEnumerator BoolForceUp()
     {
+        yield return new WaitForSeconds(2f);
         forceUp = false;
-        animator.SetBool("PowerUpAnim",false);
     }
 
 }
