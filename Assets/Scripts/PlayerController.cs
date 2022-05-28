@@ -5,9 +5,7 @@ using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
-   //Declaramos los valores minimos y maximos de X y la velocidad de movimiento
-    private float maxValueX;
-    private float minValueX;
+   //Declaramos la velocidad de movimiento en ambos ejes
     public float speed = 10f;
     public float speed_y = 0.05f;
     public bool forceUp = true;
@@ -20,8 +18,6 @@ public class PlayerController : MonoBehaviour
     // Start is calld before the first frame update
     void Start()
     {
-        maxValueX = 11f;
-        minValueX = 0 - maxValueX;
         animator = GetComponent<Animator>();
         
         framingTransposer = vCam.GetComponent<CinemachineVirtualCamera>()
@@ -31,13 +27,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        float width = (vCam.m_Lens.OrthographicSize * vCam.m_Lens.Aspect) - (sprite.bounds.size.x / 2f);
         // declaramos el control de movimiento vertical
         float new_y = framingTransposer.m_ScreenY - Input.GetAxis("Vertical") *speed_y*speed*Time.deltaTime;
         framingTransposer.m_ScreenY = Mathf.Clamp(new_y, 0.1f, 0.9f );
         // declaramos el control de movimiento derecha izquierda
         transform.Translate(Vector2.right*speed*Time.deltaTime*Input.GetAxis("Horizontal"));
         //se limita movimiento en X
-        transform.position = new Vector2(Mathf.Clamp(transform.position.x, minValueX, maxValueX), transform.position.y);
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, 0 - width, width), transform.position.y);
 
         if(forceUp)
         {
