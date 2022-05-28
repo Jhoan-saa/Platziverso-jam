@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023599995, y: 0.8155, z: -10}
+  m_LocalPosition: {x: 0.023599042, y: 4.5655003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -286,7 +286,6 @@ GameObject:
   m_Component:
   - component: {fileID: 594464004}
   - component: {fileID: 594464003}
-  - component: {fileID: 594464005}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -323,7 +322,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.1233141, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -340,7 +339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594464002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023599995, y: 0.8155, z: -10}
+  m_LocalPosition: {x: 0.023599042, y: 4.5655003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -348,18 +347,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &594464005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594464002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0582e75a7b37ad743b87e30d226b5c70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &767490014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -488,10 +475,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  speed_y: 0.05
   forceUp: 1
   forceUpVelocity: 100
-  mainCam: {fileID: 0}
-  framingTransposer: {fileID: 0}
+  vCam: {fileID: 594464003}
 --- !u!212 &777597908
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -573,7 +560,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
+  m_Offset: {x: 0, y: 1.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1065,14 +1052,14 @@ MonoBehaviour:
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenY: 0.75
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.95
-  m_DeadZoneHeight: 0.01
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 1
-  m_SoftZoneHeight: 0.18
+  m_SoftZoneHeight: 0
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
