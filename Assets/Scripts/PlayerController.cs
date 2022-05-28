@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class PlayerController : MonoBehaviour
     public bool forceUp = true;
     public float forceUpVelocity = 100f;
     private Animator animator;
-    public Transform camera;
+    public CinemachineVirtualCamera mainCam;
+    public CinemachineFramingTransposer framingTransposer;
 
     
     // Start is calld before the first frame update
@@ -20,16 +22,19 @@ public class PlayerController : MonoBehaviour
         maxValueX = 11f;
         minValueX = 0 - maxValueX;
         animator = GetComponent<Animator>();
+        
+        mainCam = GetComponent<CinemachineVirtualCamera>();
+        framingTransposer = mainCam.GetComponent<CinemachineFramingTransposer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        mainCam.GetComponent<CinemachineVirtualCamera>()
+        .GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY += Input.GetAxis("Vertical") *.01f*Time.deltaTime;
         // declaramos el control de movimiento derecha izquierda
         transform.Translate(Vector2.right*speed*Time.deltaTime*Input.GetAxis("Horizontal"));
 
-        //get camera screen position
-        Vector2 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
         //condicionamos los limites en X en positivo
         if(transform.position.x > maxValueX)
         {
