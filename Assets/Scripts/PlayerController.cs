@@ -9,11 +9,12 @@ public class PlayerController : MonoBehaviour
     private float maxValueX;
     private float minValueX;
     public float speed = 10f;
+    public float speed_y = 0.05f;
     public bool forceUp = true;
     public float forceUpVelocity = 100f;
     private Animator animator;
-    public CinemachineVirtualCamera mainCam;
-    public CinemachineFramingTransposer framingTransposer;
+    public CinemachineVirtualCamera vCam;
+    private CinemachineFramingTransposer framingTransposer;
 
     
     // Start is calld before the first frame update
@@ -23,29 +24,20 @@ public class PlayerController : MonoBehaviour
         minValueX = 0 - maxValueX;
         animator = GetComponent<Animator>();
         
-        mainCam = GetComponent<CinemachineVirtualCamera>();
-        framingTransposer = mainCam.GetComponent<CinemachineFramingTransposer>();
+        framingTransposer = vCam.GetComponent<CinemachineVirtualCamera>()
+        .GetCinemachineComponent<CinemachineFramingTransposer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        mainCam.GetComponent<CinemachineVirtualCamera>()
-        .GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY += Input.GetAxis("Vertical") *.01f*Time.deltaTime;
+        // declaramos el control de movimiento vertical
+        float new_y = framingTransposer.m_ScreenY - Input.GetAxis("Vertical") *speed_y*speed*Time.deltaTime;
+        framingTransposer.m_ScreenY = Mathf.Clamp(new_y, 0.1f, 0.9f );
         // declaramos el control de movimiento derecha izquierda
         transform.Translate(Vector2.right*speed*Time.deltaTime*Input.GetAxis("Horizontal"));
-
-        //condicionamos los limites en X en positivo
-        if(transform.position.x > maxValueX)
-        {
-            transform.position = new Vector2(maxValueX,transform.position.y);
-    
-        }
-        //condicionamos los limites en X en positivo
-        if (transform.position.x < minValueX)
-        {
-            transform.position = new Vector2(minValueX,transform.position.y);
-        }
+        //se limita movimiento en X
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, minValueX, maxValueX), transform.position.y);
 
         if(forceUp)
         {
