@@ -47,7 +47,6 @@ public class PlayerController : MonoBehaviour
         if (currentFuel > 0f)
         {
             animator.SetBool("PowerUpAnim", true);
-            //gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,forceUpVelocity));
         }
         //paramos la Coroutine , la animacion y la potencia y del cohete 
         else
