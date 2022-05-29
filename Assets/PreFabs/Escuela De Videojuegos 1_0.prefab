@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6840426534832464059}
   - component: {fileID: 6274639688037247495}
   - component: {fileID: 5147826134039936402}
+  - component: {fileID: 4994056367051674098}
   m_Layer: 0
   m_Name: Escuela De Videojuegos 1_0
   m_TagString: Untagged
@@ -147,3 +148,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!50 &4994056367051674098
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180093387723859895}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
