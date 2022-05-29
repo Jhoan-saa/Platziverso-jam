@@ -8,12 +8,12 @@ public class TextScoreKeeper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<TMPro.TextMeshProUGUI>().text = "Score: " + 0;
+        GetComponent<TMPro.TextMeshProUGUI>().text = "Puntuaje: " + 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<TMPro.TextMeshProUGUI>().text = "Score: " + playerController.getScore();
+        GetComponent<TMPro.TextMeshProUGUI>().text = "Puntuaje: " + playerController.getScore();
     }
 }
