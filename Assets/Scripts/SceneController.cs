@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    // Start is called before the first frame update
     public void toIntro()
     {
         SceneManager.LoadScene("Intro");
+        Invoke("toGame", 10f);
     }
 
     public void toCredits()
@@ -16,12 +16,13 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Creditos");
     }
 
-    public void toGame()
+    public static void toGame()
     {
+        Debug.Log("toGame");
         SceneManager.LoadScene("GameScene");
     }
 
-    public void toMenu()
+    public static void toMenu()
     {
         SceneManager.LoadScene("PantallaInicio");
     }

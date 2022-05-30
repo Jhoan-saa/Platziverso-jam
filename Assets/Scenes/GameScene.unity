@@ -1632,6 +1632,7 @@ MonoBehaviour:
   - {fileID: 3741533543846150916, guid: b2d17e2df8374b64bbac9ef50de56adb, type: 3}
   spawnHight: {fileID: 495322585}
   destroydHight: {fileID: 1260886236}
+  player: {fileID: 777597907}
   seconsWaitToSpawn: 2.5
   courseIndex: 0
   vCam: {fileID: 594464003}

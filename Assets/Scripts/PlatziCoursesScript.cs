@@ -8,10 +8,7 @@ public class PlatziCoursesScript : MonoBehaviour
 
     private GameObject destroyHeight;
     private GameObject spawnHeight;
-
-
-    public float minSpawnRange = -8.5f;
-    public float maxSpawnRange = 8.5f;
+    private SpriteRenderer sprite;
 
 
     // Start is called before the first frame update
@@ -22,6 +19,8 @@ public class PlatziCoursesScript : MonoBehaviour
 
         RB2D = GetComponent<Rigidbody2D>();
         gameObject.tag = "PlatziCourses";
+        RB2D.gravityScale = 0;
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,11 +28,12 @@ public class PlatziCoursesScript : MonoBehaviour
     {
         if (gameObject.transform.position.y <= destroyHeight.transform.position.y)
         {
-            if(GameManager.sharedInstance.courseIndex != 19)
+            if (GameManager.sharedInstance.courseIndex != 19)
             {
-                RB2D.gravityScale = 0;
 
-                gameObject.transform.position = new Vector2(Random.Range(minSpawnRange, maxSpawnRange), spawnHeight.transform.position.y);
+                gameObject.transform.position = 
+                    new Vector2(Random.Range(0 - GameManager.sharedInstance.width, GameManager.sharedInstance.width),
+                    spawnHeight.transform.position.y);
             }
         }
     }
@@ -45,9 +45,9 @@ public class PlatziCoursesScript : MonoBehaviour
         {
             Destroy(this.gameObject);
 
-            GameManager.sharedInstance.courseIndex ++;
+            GameManager.sharedInstance.courseIndex++;
             GameManager.sharedInstance.StartCoroutine("SpawnPlatziCourses");
-            RB2D.gravityScale = 1;
+            RB2D.gravityScale = 0;
         }
     }
 }
