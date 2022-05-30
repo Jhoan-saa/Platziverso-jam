@@ -21,6 +21,7 @@ public class PlatziCoursesScript : MonoBehaviour
         spawnHeight = GameObject.Find("Spawn Height");
 
         RB2D = GetComponent<Rigidbody2D>();
+        gameObject.tag = "PlatziCourses";
     }
 
     // Update is called once per frame

@@ -8,15 +8,13 @@ public class PlayerController : MonoBehaviour
     //Declaramos la velocidad de movimiento en ambos ejes
     public float speed = 10f;
     public float speed_y = 0.05f;
-    //public bool forceUp = true;
-    public float forceUpVelocity = 100f;
     public FuelBar fuelBar;
+    private float currentFuel;
     private int score = 0;
     private Animator animator;
     public CinemachineVirtualCamera vCam;
     private CinemachineFramingTransposer framingTransposer;
 
-    private float currentFuel;
 
 
     // Start is calld before the first frame update
@@ -63,13 +61,13 @@ public class PlayerController : MonoBehaviour
         GetComponent<ConstantForce2D>().enabled = false;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Curso")
+        if (collision.gameObject.tag == "PlatziCourses")
         {
             score++;
             GetComponent<ConstantForce2D>().enabled = true;
-            currentFuel = Mathf.Clamp(currentFuel + 2f, fuelBar.slider.minValue, fuelBar.slider.maxValue);
+            currentFuel = Mathf.Clamp(currentFuel + 3f, fuelBar.slider.minValue, fuelBar.slider.maxValue);
             Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
         }
     }
