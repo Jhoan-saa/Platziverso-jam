@@ -391,6 +391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Escuela De Videojuegos 1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4180093387723859895, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6840426534832464059, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -453,7 +457,7 @@ GameObject:
   - component: {fileID: 777597910}
   m_Layer: 0
   m_Name: naveOFF
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -489,7 +493,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &777597907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,12 +1144,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4dcbcb7700ea84997d7bfa196fe789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platziCourse: {fileID: 1875851311}
+  platziCourse:
+  - {fileID: 4180093387723859895, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
+  - {fileID: 7048252942663769689, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
+  - {fileID: 6126267337809260859, guid: 98a7a6c67b835df4aa87b69b823031f7, type: 3}
+  - {fileID: 2338437074482359283, guid: b7035d3d36b8dce4fa910dedfea68c34, type: 3}
+  - {fileID: 8804211270868662818, guid: 99a812fec728a814d93f24b6617d1ad0, type: 3}
+  - {fileID: 393325522114722431, guid: 17e7bc461b1431546aaf691077ccc6a1, type: 3}
+  - {fileID: 2030035629848607297, guid: 05107583f8d9fca4f9488dda0193d590, type: 3}
+  - {fileID: 8818548313236870317, guid: 44ec6d794d0d5ff4b9d680abcfc18273, type: 3}
+  - {fileID: 7414578329435164638, guid: 4547d3bf74941ee429b1185ecf187f8d, type: 3}
+  - {fileID: 3910064131477213433, guid: b815ae6d13d5bc144bce36c8ebcd29b3, type: 3}
+  - {fileID: 8904541984488037584, guid: 5e9d1536f59630641bdaa36e02d863bf, type: 3}
+  - {fileID: 236700018568046918, guid: d0f26d8b1b4ac824eac82805cd71f137, type: 3}
+  - {fileID: 7766160258104480555, guid: c4a38f2ffa0cb8c42a23c6f938297172, type: 3}
+  - {fileID: 8485449098864099072, guid: a52688c4f269dc64fbe0740d253677fe, type: 3}
+  - {fileID: 7170799434630239224, guid: f3256bb830928e34780aa3039dc1db73, type: 3}
+  - {fileID: 3093674210846910293, guid: a9554c0f08cada8489ef8e8cb9613d10, type: 3}
+  - {fileID: 6150506232679723426, guid: 8a9d5a806cc65ca43ae0a808882203a2, type: 3}
+  - {fileID: 8716655152973050188, guid: 2a229c02c346f9a46b68ba3b17323800, type: 3}
+  - {fileID: 6516806629233340116, guid: 6e51546c87a4c6248b487f69d80a7e41, type: 3}
+  - {fileID: 7550198047501183316, guid: 5b7a1366c2c556f44a42e76072012a1c, type: 3}
+  - {fileID: 2877298062217641652, guid: 07390c3818ef97245b8c0d90ebd940f6, type: 3}
+  - {fileID: 3475614730193054483, guid: c36054018f190d14594d0ca0e6257f68, type: 3}
+  - {fileID: 535846757582377696, guid: a9f05a6bbc2dcc042b6600e9d4984f92, type: 3}
+  - {fileID: 4238340037752342632, guid: 520e649d9c0189346a007b51c33f4eed, type: 3}
+  - {fileID: 5172436615383334995, guid: b457f6f51b2ae2f499371bfffa8c1ff2, type: 3}
+  - {fileID: 7071858265071341262, guid: 839d92a2afb2cb64f871aef35942cb33, type: 3}
+  - {fileID: 359779880810748996, guid: 84038ec1c0340bb449ad8764a3960c36, type: 3}
+  - {fileID: 4848480793932024420, guid: 9ed05b886f323804fbbfffc28c8f46e9, type: 3}
+  - {fileID: 8877424445198119839, guid: d542feb3f6bbbc443b3afea0ecc35926, type: 3}
+  - {fileID: 3741533543846150916, guid: b2d17e2df8374b64bbac9ef50de56adb, type: 3}
   spawnHight: {fileID: 495322585}
   destroydHight: {fileID: 1260886236}
-  seconsWaitToSpawn: 3
+  seconsWaitToSpawn: 2.5
   maxSpawnRange: 8.5
   minSpawnRange: -8.5
+  courseIndex: 0
 --- !u!4 &1500608105
 Transform:
   m_ObjectHideFlags: 0
@@ -1176,17 +1211,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Escuela De Videojuegos 1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7048252942663769689, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8806263898488262953, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8806263898488262953, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8806263898488262953, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8806263898488262953, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1320,11 +1359,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1875851311 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7048252942663769689, guid: 2a29187218300f041a7d1f4dbcab3c18, type: 3}
-  m_PrefabInstance: {fileID: 1671297969}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1988965669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1335,6 +1369,10 @@ PrefabInstance:
     - target: {fileID: 4180093387723859895, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
       propertyPath: m_Name
       value: Escuela De Videojuegos 1_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180093387723859895, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5147826134039936402, guid: 5bb310322356d6043a483eac8b7c52f8, type: 3}
       propertyPath: m_Range

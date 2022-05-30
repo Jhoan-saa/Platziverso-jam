@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 5029467882612772313}
   - component: {fileID: 53752107952591372}
   - component: {fileID: -3215257817179329609}
+  - component: {fileID: -4487412761496556091}
+  - component: {fileID: -3776926611030056311}
   m_Layer: 0
   m_Name: Escuela De Videojuegos 1_18
-  m_TagString: Untagged
+  m_TagString: PlatziCourses
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,3 +108,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &-4487412761496556091
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516806629233340116}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.785
+--- !u!114 &-3776926611030056311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516806629233340116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6967fa9b3e15ee1428b5fb959287bee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpawnRange: -8.5
+  maxSpawnRange: 8.5
