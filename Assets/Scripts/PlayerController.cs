@@ -68,7 +68,6 @@ public class PlayerController : MonoBehaviour
             score++;
             GetComponent<ConstantForce2D>().enabled = true;
             currentFuel = Mathf.Clamp(currentFuel + 3f, fuelBar.slider.minValue, fuelBar.slider.maxValue);
-            Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
         }
     }
 

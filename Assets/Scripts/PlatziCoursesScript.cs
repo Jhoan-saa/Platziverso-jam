@@ -19,6 +19,7 @@ public class PlatziCoursesScript : MonoBehaviour
 
         RB2D = GetComponent<Rigidbody2D>();
         gameObject.tag = "PlatziCourses";
+        gameObject.layer = 4;
         RB2D.gravityScale = 0;
         sprite = GetComponent<SpriteRenderer>();
     }
