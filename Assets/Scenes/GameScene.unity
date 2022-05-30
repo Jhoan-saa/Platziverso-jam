@@ -624,7 +624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.4395227, z: -10}
+  m_LocalPosition: {x: 0, y: 3.4395227, z: -19.851736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -767,7 +767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594464002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.4395227, z: -10}
+  m_LocalPosition: {x: 0, y: 3.4395227, z: -19.851736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -905,7 +905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777597904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -9.851736}
   m_LocalScale: {x: 0.7, y: 0.63952285, z: 0.75220287}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8bf8e83abb12f469f13007779503bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paralax: 150
+  paralax: 1500
 --- !u!1 &1365089530
 GameObject:
   m_ObjectHideFlags: 3
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8bf8e83abb12f469f13007779503bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paralax: 200
+  paralax: 30000
 --- !u!1 &1500608103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,10 +1633,9 @@ MonoBehaviour:
   spawnHight: {fileID: 495322585}
   destroydHight: {fileID: 1260886236}
   seconsWaitToSpawn: 2.5
-  maxSpawnRange: 8.5
-  minSpawnRange: -8.5
   courseIndex: 0
   vCam: {fileID: 594464003}
+  width: 0
 --- !u!4 &1500608105
 Transform:
   m_ObjectHideFlags: 0
@@ -1749,7 +1748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8bf8e83abb12f469f13007779503bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paralax: 100
+  paralax: 1000
 --- !u!1 &1718517859
 GameObject:
   m_ObjectHideFlags: 0
