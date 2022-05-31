@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-        float width = (vCam.m_Lens.OrthographicSize * vCam.m_Lens.Aspect) - (sprite.bounds.size.x / 2f);
+        float width = (vCam.m_Lens.OrthographicSize * vCam.m_Lens.Aspect) - (sprite.bounds.size.x / 2.5f);
         // declaramos el control de movimiento vertical
         transform.Translate(Vector2.up * speed * Time.deltaTime * Input.GetAxis("Vertical"));
         float new_y = framingTransposer.m_ScreenY - Input.GetAxis("Vertical") * speed_y * speed * Time.deltaTime;
