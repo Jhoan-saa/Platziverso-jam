@@ -1,7 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+Diseñador y lider: Jhoan Saavedra - https://platzi.com/p/jhoan-saavedra/
+Musica: Edgar Alongso - Pendiente
+Programador: Líam Ayelen Acosta Muños - https://platzi.com/p/esporcho/
+Programador: Rosalio Ezequiel Reveles Caldera - https://platzi.com/p/Quiezel/
+*/
 public class PlatziCoursesScript : MonoBehaviour
 {
     private Rigidbody2D RB2D;
@@ -20,7 +25,7 @@ public class PlatziCoursesScript : MonoBehaviour
         RB2D = GetComponent<Rigidbody2D>();
         gameObject.tag = "PlatziCourses";
         gameObject.layer = 4;
-        RB2D.gravityScale = 0;
+        RB2D.gravityScale = 0.1f;
         sprite = GetComponent<SpriteRenderer>();
     }
 
@@ -48,7 +53,7 @@ public class PlatziCoursesScript : MonoBehaviour
 
             GameManager.sharedInstance.courseIndex++;
             GameManager.sharedInstance.StartCoroutine("SpawnPlatziCourses");
-            RB2D.gravityScale = 0;
+            RB2D.gravityScale = 0.1f;
         }
     }
 }
